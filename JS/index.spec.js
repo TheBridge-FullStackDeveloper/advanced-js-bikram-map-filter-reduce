@@ -121,7 +121,7 @@ describe('Ejercicios filter', function () {
             it('El Array numbers2 está declarado', function () {
                 expect(numbers2).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
             })
-            it('El Array foodList2 devuelve el valor correcto', function () {
+            it('El Array result4 devuelve el valor correcto', function () {
                 expect(result4).toEqual([1, 3, 5, 7, 9]);
             })
 
@@ -242,7 +242,7 @@ describe('Ejercicios reduce', function () {
 
     })
 })
-//TODO allow any value for name 
+//TODO allow any value for name
 it('La variable result9 devuelve el resultado correcto', function () {
     expect(result8).toEqual(`Me llamo ${sentenceElements[2]} y quiero sentir la fuerza con javascript`
 
