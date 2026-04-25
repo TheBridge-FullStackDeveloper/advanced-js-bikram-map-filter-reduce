@@ -106,3 +106,35 @@ const sentenceElements = [
 const result8 = sentenceElements.reduce((acc, name) => {
   return `${acc} ${name}`;
 });
+
+
+//EJERCICIO 9: Obtener el monto total de los elementos que pertenecen a catergory "code" en el siguiente array.
+const books = [
+  {
+    name: ' JS for dummies',
+    author: 'Emily A. Vander Veer',
+    price: 20,
+    category: 'code'
+  },
+  {
+    name: 'Don Quijote de la Mancha',
+    author: 'Cervantes',
+    price: 14,
+    category: 'novel'
+  },
+  {
+    name: 'Juego de tronos',
+    author: 'George R. Martin',
+    price: 32,
+    category: 'Fantasy'
+  },
+  {
+    name: 'javascript the good parts',
+    author: 'Douglas Crockford',
+    price: 40,
+    category: 'code'
+  }
+];
+const result9 = books
+  .filter(book => book.category === 'code')
+  .reduce((acc, book) => acc + book.price, 0);
