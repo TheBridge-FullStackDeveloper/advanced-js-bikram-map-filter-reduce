@@ -49,3 +49,16 @@ const result3 = staff.map((persona) => {
 //EJERCICIO 4: Crea un segundo array result4 a partir del array numbers2 que devuelva solo los impares
 const numbers2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const result4 = numbers2.filter(num => num % 2 !== 0);
+
+//EJERCICIO 5:  Dado el array foodList2, genera un segundo array result5 que filtre los platos veganos y saque una sentencia como la del ejemplo
+const foodList2 =[
+{name: 'Tempeh', isVeggie: true},
+{name: 'Cheesbacon burguer', isVeggie: false},
+{name: 'Entrecot',isVeggie: false},
+];
+const result5 =foodList2
+  .filter(plato => plato.isVeggie === true) // 1. Filtramos: solo pasan los veganos
+  .map(plato => {
+let adjetivo = plato.name.includes('burguer') ? 'rica' : 'rico';
+return `Que ${adjetivo} ${plato.name} me voy a comer!`
+});
