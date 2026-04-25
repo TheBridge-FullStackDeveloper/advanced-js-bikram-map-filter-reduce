@@ -45,3 +45,7 @@ const staff = [
 const result3 = staff.map((persona) => {
   return `${persona.name} es ${persona.role} y le gusta ${persona.hobbies[0]} y ${persona.hobbies[1]}`;
 });
+
+//EJERCICIO 4: Crea un segundo array result4 a partir del array numbers2 que devuelva solo los impares
+const numbers2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const result4 = numbers2.filter(num => num % 2 !== 0);
