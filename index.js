@@ -84,3 +84,7 @@ const inventory = [
 ];
 const result6 = inventory
   .filter(articulo => articulo.price > 300).map(articulo => articulo.name);
+
+  //EJERCICIO 7: Dado el siguiente array numeros [39, 2, 4, 25, 62], obten la multiplicación de todos los elementos del array
+  const numbers3 = [39, 2, 4, 25, 62]
+const result7 = numbers3.reduce((acc, num) => acc * num, 1);
