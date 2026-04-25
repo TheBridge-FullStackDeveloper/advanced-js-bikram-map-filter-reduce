@@ -62,3 +62,25 @@ const result5 =foodList2
 let adjetivo = plato.name.includes('burguer') ? 'rica' : 'rico';
 return `Que ${adjetivo} ${plato.name} me voy a comer!`
 });
+
+//EJERCICIO 6: Dado el array inventory, devolver un array con los nombres de los elementos que valgan más de 300 euros.
+const inventory = [
+  {
+    name: 'Mobile phone',
+    price: 199
+  },
+  {
+    name: 'TV Samsung',
+    price: 459
+  },
+  {
+    name: 'Viaje a Cancún',
+    price: 600
+  },
+  {
+    name: 'Mascarilla',
+    price: 1
+  }
+];
+const result6 = inventory
+  .filter(articulo => articulo.price > 300).map(articulo => articulo.name);
