@@ -7,7 +7,7 @@ return numbers.map(num => num ** num);
 
 //EJERCICIO 2:
 const foodList = ['Pizza', 'Ramen', 'Paella', 'Entrecot'];
-const result = foodList.map((food, index) => {
+const result2 = foodList.map((food, index) => {
   if (index === 0) {
     return `Como soy de Italia, amo comer ${food}`;
   } else if (index === 1) {
@@ -17,4 +17,31 @@ const result = foodList.map((food, index) => {
   } else {
     return `Aunque no como carne, el ${food} es sabroso`;
   }
+});
+
+//EJERCICIO 3:
+const staff = [
+  {
+    name: 'Pepe',
+    role: 'The Boss',
+    hobbies: ['leer', 'ver pelis']
+  },
+  {
+    name: 'Ana',
+    role: 'becaria',
+    hobbies: ['nadar', 'bailar']
+  },
+  {
+    name: 'Luis',
+    role: 'programador',
+    hobbies: ['dormir', 'comprar']
+  },
+  {
+    name: 'Carlos',
+    role: 'secretario',
+    hobbies: ['futbol', 'queso']
+  }
+];
+const result3 = staff.map((persona) => {
+  return `${persona.name} es ${persona.role} y le gusta ${persona.hobbies[0]} y ${persona.hobbies[1]}`;
 });
