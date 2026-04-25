@@ -88,3 +88,21 @@ const result6 = inventory
   //EJERCICIO 7: Dado el siguiente array numeros [39, 2, 4, 25, 62], obten la multiplicación de todos los elementos del array
   const numbers3 = [39, 2, 4, 25, 62]
 const result7 = numbers3.reduce((acc, num) => acc * num, 1);
+
+
+  //EJERCICIO 8: Concatena todos los elementos del array con reduce para que devuelva una sola frase
+const sentenceElements = [
+  'Me',
+  'llamo',
+  'Thaís',
+  'y',
+  'quiero',
+  'sentir',
+  'la',
+  'fuerza',
+  'con',
+  'javascript'
+];
+const result8 = sentenceElements.reduce((acc, name) => {
+  return `${acc} ${name}`;
+});
